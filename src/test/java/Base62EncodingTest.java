@@ -12,8 +12,8 @@ import static org.example.converter.Base62Encoder.fromBase10;
 import static org.example.converter.Base62Encoder.toBase10;
 
 @RunWith(Parameterized.class)
-public class Base62ConversionTest {
-    private Logger logger = LoggerFactory.getLogger(Base62ConversionTest.class);
+public class Base62EncodingTest {
+    private Logger logger = LoggerFactory.getLogger(Base62EncodingTest.class);
 
     @Parameterized.Parameter(0)
     public long value;
