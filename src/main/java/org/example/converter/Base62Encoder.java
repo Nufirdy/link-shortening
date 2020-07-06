@@ -1,10 +1,10 @@
-package org.example.utils;
+package org.example.converter;
 
-public class Base62ConvertUtil {
+public class Base62Encoder {
     public static final String ALPHABET = "0abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
     public static final int BASE = ALPHABET.length();
 
-    private Base62ConvertUtil() {}
+    private Base62Encoder() {}
 
     public static String fromBase10(long i) {
         StringBuilder sb = new StringBuilder("");

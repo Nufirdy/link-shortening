@@ -8,8 +8,8 @@ import org.slf4j.LoggerFactory;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static org.example.utils.Base62ConvertUtil.fromBase10;
-import static org.example.utils.Base62ConvertUtil.toBase10;
+import static org.example.converter.Base62Encoder.fromBase10;
+import static org.example.converter.Base62Encoder.toBase10;
 
 @RunWith(Parameterized.class)
 public class Base62ConversionTest {

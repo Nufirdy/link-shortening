@@ -7,7 +7,7 @@ import org.example.persistence.access.LinkDAO;
 import javax.inject.Inject;
 import javax.validation.constraints.NotNull;
 
-import static org.example.utils.Base62ConvertUtil.toBase10;
+import static org.example.converter.Base62Encoder.toBase10;
 
 public class LinkService {
 

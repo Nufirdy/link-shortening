@@ -5,7 +5,7 @@ import java.net.URI;
 import java.time.LocalDate;
 import java.util.Objects;
 
-import static org.example.utils.Base62ConvertUtil.fromBase10;
+import static org.example.converter.Base62Encoder.fromBase10;
 
 @Entity
 @Table(name = "links")

@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 
 import java.util.List;
 
-import static org.example.utils.Base62ConvertUtil.toBase10;
+import static org.example.converter.Base62Encoder.toBase10;
 
 public class LinkStatsService {
 
