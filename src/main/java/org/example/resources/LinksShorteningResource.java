@@ -16,16 +16,16 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Path(value = "")
-public class LinksShortenerResource {
+@Path(value = "/")
+public class LinksShorteningResource {
 
     private LinkService linkService;
     private LinkStatsService linkStatsService;
     private ObjectMapper mapper;
 
     @Inject
-    public LinksShortenerResource(LinkService linkService,
-                                  LinkStatsService linkStatsService) {
+    public LinksShorteningResource(LinkService linkService,
+                                   LinkStatsService linkStatsService) {
         this.linkService = linkService;
         this.linkStatsService = linkStatsService;
         mapper = new ObjectMapper();

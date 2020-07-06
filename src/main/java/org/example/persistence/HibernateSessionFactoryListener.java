@@ -6,7 +6,7 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-import org.jboss.logging.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -15,7 +15,8 @@ import javax.servlet.annotation.WebListener;
 @WebListener
 public class HibernateSessionFactoryListener implements ServletContextListener {
 
-    public final Logger logger = Logger.getLogger(HibernateSessionFactoryListener.class);
+    private final org.slf4j.Logger logger = LoggerFactory.getLogger(HibernateSessionFactoryListener.class);
+
     private static SessionFactory sessionFactory;
 
     @Override
